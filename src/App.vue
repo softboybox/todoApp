@@ -40,6 +40,6 @@
 
     }
 </style>
-<style lang="scss">
-    @import "../dist/scss/app";
+<style>
+    @import "../public/css/app.95124464.css";
 </style>
