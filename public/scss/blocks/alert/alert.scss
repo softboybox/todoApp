@@ -1,0 +1,17 @@
+.alert{
+  position: fixed;
+  background: rgba(128, 128, 128, 0.35);
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  height: 100%;
+  .alert__delete{
+    background: white;
+    padding: 2em;
+    text-align: center;
+    margin: 15% 35%;
+    border-radius: 35px;
+
+  }
+}

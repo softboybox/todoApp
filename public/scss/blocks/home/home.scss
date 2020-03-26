@@ -1,0 +1,11 @@
+.home{
+  display: flex;
+  flex-direction: column-reverse;
+  .home__buttons{
+    text-align: right;
+  }
+  hr{
+    margin: 3em auto;
+    max-width: 50%;
+  }
+}

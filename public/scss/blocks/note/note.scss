@@ -1,0 +1,69 @@
+.note {
+  background: #F4F4F8;
+  padding: 1% 5%;
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+
+  .note__right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 0;
+  }
+
+  .note__input {
+    margin-top: 5em;
+
+    textarea {
+      background: #FFDD4A;
+      margin-top: 20px;
+      color: #1F0318;
+      font-size: 15px;
+      padding: 1em;
+      width: 100%;
+      outline: none;
+      border: none;
+    }
+
+    textarea::placeholder {
+      color: #1F0318;
+      font-size: 15px;
+    }
+  }
+
+  .note__input_name {
+    input {
+      background: none;
+      border: none;
+      border-bottom: 1px solid #1F0318;
+      font-size: 20px;
+      outline: none;
+    }
+  }
+
+  .note__tasks {
+    ul {
+      list-style-type: none;
+
+      li {
+        cursor: pointer;
+      }
+    }
+    input{
+      background: none;
+      border: none;
+      border-bottom: 1px solid #1F0318;
+      font-size: 15px;
+      outline: none;
+    }
+    .note__task_done{
+      text-decoration: line-through;
+    }
+  }
+
+  .note__checkbox {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,18 @@
+@media only screen and (max-width: 750px) {
+  .note{
+    display: block;
+    .note__right-side{
+      display: block;
+    }
+  }
+  .alert{
+    .alert__delete{
+      margin: 50% 5%;
+    }
+  }
+  .note{
+    .note__input textarea{
+      width: unset;
+    }
+  }
+}

@@ -1,0 +1,70 @@
+@import "blocks/note/note";
+@import "blocks/add-button/add-button";
+@import "blocks/alert/alert";
+@import "blocks/home/home";
+@import "adaptive";
+
+
+.greetings{
+  text-align: center;
+}
+
+
+.btn {
+  background: #FFDD4A;
+  margin-top: 15px;
+  border: 0;
+  font-size: 16px;
+  border-radius: 20px;
+  padding: 9px 20px;
+  cursor: pointer;
+}
+.btn_green{
+  background: #00dd00;
+  color: white;
+}
+.btn_red{
+  background: red;
+  color: white;
+}
+.delete_span {
+  position: relative;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  overflow: hidden;
+  margin-left: 10px;
+  padding-top: 10px;
+  cursor: pointer;
+
+  &:hover {
+    &::before, &::after {
+      background: red;
+    }
+  }
+
+  &::before, &::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    margin-top: 6px;
+    background: #000;
+  }
+
+  &::before {
+     transform:(rotate(45deg));
+  }
+
+  &::after {
+     transform:(rotate(-45deg));
+  }
+
+  &.hairline {
+    &::before, &::after {
+      height: 1px;
+    }
+  }
+}
